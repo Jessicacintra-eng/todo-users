@@ -36,11 +36,13 @@ const Todolist = () => {
         //    console.log(color)
         //    return color
         //  }  
+        // // task.sort(function(a,b){
+        //   return a.completed-b-completed
+        // })
         return (
           <div className={s.task} style={{backgroundColor: task.completed? 'lightgreen':'tomato'}}key={task.id}>
             <p>{task.title}</p>
-            <p>{task.completed? 'Completada':'A fazer'}</p> 
-            
+            <p>{ task.completed? 'Completada':'A fazer'}</p> 
           </div>
         );
       })}

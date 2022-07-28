@@ -13,7 +13,7 @@ function Routes() {
     <BrowserRouter>
     <Switch>
       <Route path="/" element={<Home/>} />
-      <Route path="/todoList/:id" element={<Todolist />} />
+      <Route path="/todoList/:id/:name" element={<Todolist />} />
     </Switch>
   </BrowserRouter>
   )
