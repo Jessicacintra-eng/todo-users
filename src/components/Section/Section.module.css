@@ -1,0 +1,12 @@
+.section{
+  width: 80%;
+  height: calc(100% - 70px);
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 100px;
+  background-color: #faebd7;
+  overflow-y: auto;
+}

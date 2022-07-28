@@ -1,0 +1,19 @@
+.card{
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ccc;
+  box-shadow: 2px 2px 5px #00000080;
+}
+
+.btn{
+  color: #fff;
+  background-color: tomato;
+  padding: 5px 20px;
+  border-radius: 5px;
+}

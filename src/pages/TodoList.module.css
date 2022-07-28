@@ -1,0 +1,17 @@
+.tarefas{
+  margin: auto;
+  width: 80%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header{
+  width: 100%;
+  display: flex;
+  height: 70px;
+  background-color: tomato;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,8 @@
+header{
+  width: 80%;
+  display: flex;
+  height: 70px;
+  background-color: tomato;
+  align-items: center;
+  justify-content: center;
+}
