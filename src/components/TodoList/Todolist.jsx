@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import s from './Todolist.module.css'
+import Task from "../Task/Task";
+import NewTask from "../Task/NewTask";
+
 
 const Todolist = () => {
   const [tasks, setTasks] = useState([]);
@@ -18,7 +21,6 @@ const Todolist = () => {
     };
     getTasksFromUserId();
   }, []);
- 
 
   return (
     <div className={s.main}>
@@ -26,24 +28,12 @@ const Todolist = () => {
       <h3>{name}</h3>
       </aside>
       <div className={s.tasks} >
-     
+      
+       <NewTask />
       
       {!!tasks && tasks.map((task) => {
-        // console.log(task)
-        // console.log(task.completed)
-        // const taskColor= ()=>{
-        //   const color = 
-        //    console.log(color)
-        //    return color
-        //  }  
-        // // task.sort(function(a,b){
-        //   return a.completed-b-completed
-        // })
         return (
-          <div className={s.task} style={{backgroundColor: task.completed? 'lightgreen':'tomato'}}key={task.id}>
-            <p>{task.title}</p>
-            <p>{ task.completed? 'Completada':'A fazer'}</p> 
-          </div>
+          <Task data={task} key={task.id}/>
         );
       })}
       </div>

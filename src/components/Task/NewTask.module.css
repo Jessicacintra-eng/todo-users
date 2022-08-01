@@ -1,0 +1,21 @@
+.btn{
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+
+}
+.inputCaixa{
+  width: 340px;
+  height: 30px;
+  border-radius: 6px;
+  border-color: #707070;
+  background-color: rgba(250, 235, 215, 0.251);
+
+}
+.newTask{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:15px;
+ }
